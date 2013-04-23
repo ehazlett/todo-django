@@ -70,7 +70,7 @@ In future installments, the apps could be given more features such as:
 
 - Batching
 - Configuration panel
-- Expose an API
+- ~~Expose an API~~
 - iCal feed
 - Lists
 - Location / context
