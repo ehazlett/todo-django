@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User
 from django.db import models
 from taggit.managers import TaggableManager
+from tastypie.models import create_api_key
+from django.db.models.signals import post_save
 
 class Task(models.Model):
     user = models.ForeignKey(User)
@@ -10,3 +12,5 @@ class Task(models.Model):
 
     def __unicode__(self):
         return self.title
+
+models.signals.post_save.connect(create_api_key, sender=User)

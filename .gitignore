@@ -1,4 +1,4 @@
 tododjango
-todo_django/directtodo
 *.pyc
 *.swp
+*.db
